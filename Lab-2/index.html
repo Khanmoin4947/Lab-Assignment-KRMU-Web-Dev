@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>My Protfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -12,27 +13,17 @@
   <header>
     <h1>Moin Khan</h1>
     <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#project">My Project</a></li>
-        <li><a href="#contact">Contact Me</a></li>
-      </ul>
+        <a href="#about">About Me</a>
+        <a href="#project">My Project</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact Me</a>
     </nav>
   </header>
+  <hr>
 
   <main>
-
-    <section>
-      <h2>Welcome to My Protfolio</h2>
-      <p>
-        Hello! I am a web development student. <br />This is my personal
-        protfolio website using html only css will be aded as i progress
-        forward
-      </p>
-    </section>
-  
-    <section>
-      <h2 id="about">About Me</h2>
+    <section id="about">
+      <h2>About Me</h2>
       <img src="myself.png" alt="profile image" width="150" style="border-radius: 50%" />
       <p>
         I am passionate about learning and solving real world problems with
@@ -41,20 +32,31 @@
       </p>
     </section>
     
-    <section>
-      <h2 id="project">My Projects</h2>
-      <ul type="square">
-        <li>Profolio website</li>
-        <dd>A single page website by only using html,currently looking at</dd>
-        <li>AI file Rename</li>
-        <dd>A simple python script that rename my .py files in sequence,Available at my github profile</dd>
-        <li>Personal Profolio website using REACT</li>
-        <dd>A personal portfolio website using react (javascript library), workis still in progress not publicly available</dd>
-      </ul>
+    <section id="project">
+      <h2">My Projects</h2><table border=".5">
+        <tbody>
+          <tr>
+            <th>Projects</th>
+            <th>Description</th>
+          </tr>
+          <tr>
+            <td>Profolio website</td>
+            <td>A personal portfolio website using HTML and CSS.</td>
+          </tr>
+          <tr>
+            <td>AI file Rename</td>
+            <td>A simple python script that rename my .py files in sequence,Available at my github profile</td>
+          </tr>
+          <tr>
+            <td>Personal Profolio website using REACT</td>
+            <td>A personal portfolio website using react (javascript library), workis still in progress not publicly available</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
    
-    <section>
-      <h2>Tech Stack</h2>
+    <section id="skills">
+      <h2>Tech stack</h2>
       <table border=".5">
         <tbody>
           <tr>
@@ -63,10 +65,14 @@
           </tr>
           <tr>
             <td>Html</td>
-            <td>Intermediate</td>
+            <td>Advanced</td>
           </tr>
           <tr>
             <td>CSS</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
             <td>Intermediate</td>
           </tr>
           <tr>
@@ -77,8 +83,8 @@
       </table>
     </section>
     
-    <section>
-      <h2 id="contact">Contact Me</h2>
+    <section id="contact">
+      <h2>Contact Me</h2>
       <form>
         <label for="username">Name :</label>
         <input type="text" id="username" placeholder="Enter your name" />
