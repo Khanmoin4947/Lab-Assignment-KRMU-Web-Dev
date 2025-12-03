@@ -1,176 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buystars - Delicious Food Delivered</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Food Delivery Service</title>
+    <link rel="stylesheet" href="new.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1480px)"
+      href="phone.css"
+    />
+  </head>
+  <body>
+    <nav id="navbar">
+      <div id="logo">
+        <img src="logo.png" alt="food delivery logo" />
+      </div>
 
-    <nav>
-        <h1>Buystars</h1>
-        <ul>
-            <li><a href="#categories">Categories</a></li>
-            <li><a href="#restaurants">Restaurants</a></li>
-            <li><a href="#offers">Offers</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-        </ul>
-        <div>
-            <button>Login</button>
-            <button>Sign Up</button>
-        </div>
+      <ul>
+        <!-- li.item{<a></a>}*5  (shortcut) -->
+
+        <li class="item"><a href="#home">Home</a></li>
+        <li class="item"><a href="#service">Services</a></li>
+        <li class="item"><a href="#client-section">Our Clients </a></li>
+        <li class="item"><a href="#contact">Contact us</a></li>
+      </ul>
     </nav>
+    <section id="home">
+      <h1 class="h-primary">Welcome To MyOnlineMeal</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa aliquid
+        quae .
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <button class="btn">Order Now</button>
+    </section>
+    <section id="service">
+      <h1 class="h-primaryclass">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img class="img1" src="img/img1.png" alt="Food" />
+          <h2 class="h-secondary">Food Catering</h2>
+          <p class="center1">
+            Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum dolor
+            sit amet consectetur adipisicing elit. Magni expedita temporibus
+            nisi error asperiores, corporis porro ipsum dolorem! Numquam, ullam.
+            Reiciendis fuga consequuntur voluptatibus eius, magnam, ex tenetur
+            unde impedit, quia reprehenderit magni nobis.
+          </p>
+        </div>
+        <div class="box">
+          <img class="img1" src="img/img2.jpg" alt="Food" />
+          <h2 class="h-secondary">Bulk Ordering</h2>
+          <p class="center1">
+            Lorem ipsum dolor sit amet consectetur adipisicing Lorem, ipsum
+            dolor sit amet consectetur adipisicing elit. Iure aspernatur ratione
+            rem debitis aliquam omnis cum minima temporibus error laboriosam!
+            Reiciendis fuga consequuntur voluptatibus eius, magnam, ex tenetur
+            unde impedit, quia reprehenderit magni nobis.
+          </p>
+        </div>
+        <div class="box">
+          <img class="img1" src="img/delevary.png" alt="Food" />
+          <h2 class="h-secondary">Food Ordering</h2>
+          <p class="center1">
+            Lorem ipsum dolor sit amet consectetur adipisicing Lorem ipsum
+            dolor, sit amet consectetur adipisicing elit. Ipsum labore, placeat
+            enim consequuntur nisi veniam laudantium modi cupiditate similique
+            alias! Reiciendis fuga consequuntur voluptatibus eius, magnam, ex
+            tenetur unde impedit, quia reprehenderit magni nobis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="client-section">
+      <h1 class="h-primaryclass">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img id="apple1" src="img/apple.png" alt="Our Client" />
+        </div>
 
-    <div class="container">
+        <div class="client-item">
+          <img src="img/skype.png" alt="Our Client" />
+        </div>
 
-        <section id="intro">
-            <div class="intro-text">
-                <h1>Delicious food,<br>delivered to you</h1>
-                <p>Order from your favorite restaurants and get your meal delivered fast, fresh, and hot. Discover the best food in your city with Foodie!</p>
-                <br> 
-                <button>Order Now</button>
-            </div>
-            
-            <div class="intro-image">
-                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Delicious Food Table">
-            </div>
-        </section>
+        <div class="client-item">
+          <img src="img/microsoft.png" alt="Our Client" />
+        </div>
 
-        <section class="search-container">
-            <form>
-                <label for="location">Location:</label>
-                <input type="text" id="location" placeholder="Enter your location">
-                
-                <label for="category">Category:</label>
-                <select id="category">
-                    <option>All Categories</option>
-                    <option>Fast Food</option>
-                    <option>Fine Dining</option>
-                    <option>Healthy</option>
-                </select>
-                
-                <button type="button">Search</button>
-            </form>
-        </section>
+        <div class="client-item">
+          <img src="img/hp.png" alt="Our Client" />
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <h1 class="h-primaryclass">Contact us</h1>
+      <div id="contact-box">
+        <form action="">
+          <div class="form-group">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="Name"
+              id="name"
+              placeholder="Entr your name"
+            />
+          </div>
 
-        <section id="categories">
-            <h2>Browse by Category</h2>
-            <ul class="category-list">
-                <li class="category-item"><span>🍕</span> Pizza</li>
-                <li class="category-item"><span>🍔</span> Burgers</li>
-                <li class="category-item"><span>🍣</span> Sushi</li>
-                <li class="category-item"><span>🍲</span> Indian</li>
-                <li class="category-item"><span>🍜</span> Chinese</li>
-                <li class="category-item"><span>🧁</span> Desserts</li>
-                <li class="category-item"><span>🥤</span> Drinks</li>
-                <li class="category-item"><span>🌮</span> Mexican</li>
-                <li class="category-item"><span>🥗</span> Salads</li>
-            </ul>
-        </section>
+          <div class="form-group">
+            <label for="Email">Email: </label>
+            <input
+              type="Email"
+              name="email"
+              id="email"
+              placeholder="Entr your Email"
+            />
+          </div>
 
-        <section id="restaurants">
-            <h2>Featured Restaurants</h2>
-            
-            <div class="card-container">
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1590947132387-155cc02f3212?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Pizza Palace">
-                    <div class="card-content">
-                        <h3>Pizza Palace</h3>
-                        <p><strong>Rating:</strong> 4.8/5</p>
-                        <p>Pizza, Italian</p>
-                        <small>20-30 min</small>
-                    </div>
-                </article>
+          <div class="form-group">
+            <label for="phone number">Phone Number: </label>
+            <input
+              type="phone"
+              name="phone number"
+              id="phone"
+              placeholder="Entr your phone No."
+            />
+          </div>
 
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1571091718767-18b5b1457add?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Burger Hub">
-                    <div class="card-content">
-                        <h3>Burger Hub</h3>
-                        <p><strong>Rating:</strong> 4.6/5</p>
-                        <p>Burgers, Fast Food</p>
-                        <small>15-25 min</small>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <img src="https://images.unsplash.com/photo-1579871494447-9811cf80d66c?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=60" alt="Sushi World">
-                    <div class="card-content">
-                        <h3>Sushi World</h3>
-                        <p><strong>Rating:</strong> 4.7/5</p>
-                        <p>Sushi, Japanese</p>
-                        <small>30-45 min</small>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <section id="offers">
-            <h2>Promo Offers</h2>
-            <ul class="offers-list">
-                <li class="offer-card">
-                    <h3>🎉 30% OFF</h3>
-                    <p>On your first order</p>
-                    <button>Claim Now</button>
-                </li>
-                <li class="offer-card">
-                    <h3>🚚 Free Delivery</h3>
-                    <p>On orders above $20</p>
-                    <button>Learn More</button>
-                </li>
-                <li class="offer-card">
-                    <h3>🍔 Buy 1 Get 1</h3>
-                    <p>On burgers every Friday</p>
-                    <button>Order Now</button>
-                </li>
-            </ul>
-        </section>
-
-        <section id="testimonials">
-            <h2>What Our Customers Say</h2>
-            <div class="card-container">
-                <article class="card">
-                    <div class="card-content" style="text-align: center;">
-                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah M." style="width: 60px; height: 60px; border-radius: 50%;">
-                        <p>★★★★★</p>
-                        <p>"Foodie makes ordering food so easy and quick! The delivery is always on time."</p>
-                        <p><strong>Sarah M.</strong></p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-content" style="text-align: center;">
-                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="James L." style="width: 60px; height: 60px; border-radius: 50%;">
-                        <p>★★★★★</p>
-                        <p>"Great selection of restaurants and amazing offers. Highly recommend!"</p>
-                        <p><strong>James L.</strong></p>
-                    </div>
-                </article>
-
-                <article class="card">
-                    <div class="card-content" style="text-align: center;">
-                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Priya S." style="width: 60px; height: 60px; border-radius: 50%;">
-                        <p>★★★★★</p>
-                        <p>"The app is super user-friendly and the customer support is fantastic."</p>
-                        <p><strong>Priya S.</strong></p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-    </div>
-
+          <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter any message"
+            ></textarea>
+          </div>
+          <button type="submit" id="btnn">SUBMIT</button>
+        </form>
+      </div>
+    </section>
     <footer>
-        <h3>Foodie</h3>
-        <nav style="background: none; justify-content: center; box-shadow: none;">
-            <a href="#">About Us</a> | 
-            <a href="#">Privacy Policy</a> | 
-            <a href="#">Terms</a> | 
-            <a href="#">Contact</a>
-        </nav>
-        <p>Follow me on: Facebook | Twitter | Instagram</p>
-        <p>&copy; 2025 Foodie. All rights reserved.</p>
+      <div class="center">
+        copyright &copy; www.myOnlineMeal.com All right reserved!
+      </div>
     </footer>
-
-</body>
+  </body>
 </html>
