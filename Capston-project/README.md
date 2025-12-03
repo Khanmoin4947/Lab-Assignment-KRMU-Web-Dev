@@ -1,16 +1,16 @@
 # food_delivery_Website_made_by_Moin_Khan
-Food Delivery Website – Moin Khan
+# Food Delivery Website – Moin Khan
 
-This project is a web development capstone assignment designed to simulate a Food Delivery Service landing page. It utilizes HTML and CSS to create a responsive and visually appealing user interface.
+This project is a web development capstone assignment designed to simulate a **Food Delivery Service** landing page. It utilizes **HTML** and **CSS** to create a responsive and visually appealing user interface.
 
-📌 Project Overview
-
+## 📌 Project Overview
 The goal of this project is to build a static website for a food delivery service. It focuses on layout design, styling, and responsiveness, ensuring the site looks good on both desktop and mobile devices.
 
-📸 Expected Output
+## 📸 Expected Output
+![Website Screenshot](./output.png)
 
-📂 Project Structure
-
+## 📂 Project Structure
+```plaintext
 CAPSTON-PROJECT/
 ├── img/                   # Image assets (logos, food items, brand icons)
 │   ├── apple.png
@@ -26,8 +26,6 @@ CAPSTON-PROJECT/
 ├── new.css                # Additional styling
 ├── output.png             # Screenshot of the final website
 └── README.md              # Project documentation
-
-
 🛠️ Technologies Used
 
 HTML5: For structuring the web page content.
@@ -67,7 +65,3 @@ Moin Khan
 Course: Web Development
 
 GitHub: Khanmoin4947
-
-# Expected output
-![Output](output.png)
-
