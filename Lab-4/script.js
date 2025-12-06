@@ -1,56 +1,30 @@
-(function() {
+  const q = [
+    { p:"How many zeros in 1001010", a:"4"},
+    { p:"Who is prime minister of india", a:"narender modi"},
+    { p:"What's 5*11", a:"55"},
+    { p:"Who is the first person to walk on the moon?", a:"Neil Armstrong"},
+    { p:"Best coding language for beginer's", a:"python"}
+];
 
-  const quiz = [
-    { q: "What is the capital of France?", a: "paris" },
-    { q: "Which planet is known as the Red Planet?", a: "mars" },
-    { q: "What is 5 multiplied by 6?", a: "30" },
-    { q: "Which language is primarily used for web pages (short name)?", a: "html" },
-    { q: "Who directed 'Interstellar'?", a: "christopher nolan" }
-  ];
+function r() {
+    let s = 0;
+    for (let i = 0; i < q.length; i++) {
+        let u = prompt(q[i].p);
+        if (u === null) {
+            alert("Quiz cancelled. Goodbye!");
+            return;
+        }
+        const nU = u.toLowerCase().trim();
+        const nA = q[i].a.toLowerCase().trim();
 
- 
-  function normalize(input) {
-    return (input === null) ? "" : String(input).toLowerCase().trim();
-  }
-
-
-  function askQuestion(item, index, total) {
-    const promptText = `Question ${index + 1} of ${total}:\n${item.q}`;
-    const userRaw = prompt(promptText);
-    const user = normalize(userRaw);
-    const correct = normalize(item.a);
-
-    if (user === "") {
-      alert("No answer provided. Moving to next question.");
-      return false;
+        if (nU === nA) {
+            alert("Correct! ");
+            s++;
+        } else {
+            alert(`Wrong! The correct answer is: ${q[i].a}`);
+        }
     }
+    alert(`Quiz Over! Your final score is ${s} out of ${q.length}.`);
+}
 
-    if (user === correct) {
-      alert("✅ Correct!");
-      return true;
-    } else {
-      alert(`❌ Incorrect. The correct answer is: "${item.a}".`);
-      return false;
-    }
-  }
-
-
-  function runQuiz(questions) {
-    let score = 0;
-    const total = questions.length;
-
-    for (let i = 0; i < total; i++) {
-      const correct = askQuestion(questions[i], i, total);
-      if (correct) score++;
-      console.log(`Progress: ${i + 1}/${total} — Current score: ${score}`);
-    }
-
-    const percent = Math.round((score / total) * 100);
-    const finalMessage = `Quiz finished!\nYour score: ${score}/${total} (${percent}%)`;
-    alert(finalMessage);
-    console.log(finalMessage);
-  }
-
-
-  runQuiz(quiz);
-})();
+r();
